@@ -1,38 +1,53 @@
 .App {
-  text-align: center;
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	overflow-y: auto;
+	box-sizing: border-box;
+	grid-template-columns: 70% 30%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .svgArea {
+	height: 100vh;
+	box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .svgArea h1 {
+	font-size: 36px;
+	width: 100%;
+	padding-left: 2rem;
+	color: #010101;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App .properties {
+	display: flex;
+	height: 100%;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1rem;
 }
-
-.App-link {
-  color: #61dafb;
+.App .properties fieldset {
+	border: none;
+	width: 90%;
+	margin: 0 auto 1rem 0;
+	padding: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .properties h2 {
+	margin: 1rem 0;
+	width: 100%;
+	text-align: start;
+	color: #010101;
+	font-size: 24px;
+}
+.App .properties fieldset label {
+	width: 100%;
+	text-align: start;
+	font-size: 20px;
+}
+.App .properties fieldset label span {
+	margin-left: 1rem;
+	color: gray;
+}
+.App .properties input {
+	width: 100%;
+	margin: 0.5rem 0;
 }
